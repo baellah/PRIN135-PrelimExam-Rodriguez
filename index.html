@@ -3,50 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>PRIN135-PrelimExam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIN135 - Midterm Exam | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="#profile">Profile</a> | 
-            <a href="#skills">Skills</a> | 
-            <a href="#education">Education</a> | 
-            <a href="#awards">Awards and Achievements</a> | 
-            <a href="#contact">Contact Me</a>
-        </nav>
+<body id="top">
+
+    <!-- ---------- Navigation ---------- -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ---------- Header ---------- -->
+    <header class="site-header">
+        <div class="header-inner clearfix">
+
+            <div class="photo-box">
+                <div class="photo-frame">
+                    <!-- Replace the image with your own profile picture -->
+                    <img class="photo" src="profile.jpg" alt="Profile picture of Juan Dela Cruz">
+                </div>
+            </div>
+
+            <div class="header-text">
+                <h1 class="name">Ma. Arabella V. Rodriguez</h1>
+                <ul class="header-links">
+                    <li><a href="tel:+639182882840">+63 918 288 2840</a></li>
+                    <li><a href="mailto:biz.baella@gmail.com">biz.baella@gmail.com</a></li>
+                    <li><a href="https://github.com/baellah" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                </ul>
+                <p class="profile">
+                    Hello! I'm Bella, that's all there is to know. Than
+                </p>
+            </div>
+
+        </div>
     </header>
 
-    <hr>
+    <main class="wrapper">
 
-    <main>
-        <section id="profile">
-            <header>
-                <h2>Profile</h2>
-            </header>
-            
-            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/d034ac62-9620-4063-b97a-9567726d78f4-profile_image-300x300.png" alt="Profile Photo" width="150" height="150">
-            
-            <h3>Ma. Arabella V. Rodriguez</h3>
-            
-            <p>
-                Email: <a href="mailto:biz.baella@gmail.com">biz.baella@gmail.com</a> | 
-                Contact: <a href="tel:+639182882840">+639182882840</a> |
-                GitHub: <a href="https://github.com/baellah" target="_blank" rel="noopener noreferrer">baellah</a>
-            </p>
-            
-            <p>
-                Hello! I'm Bella, that's all there is to know. Thank you, bye.
-            </p>
-        </section>
-
-        <hr>
-
-        <section id="skills">
-            <header>
-                <h2>Skills</h2>
-            </header>
-            <ul>
+        <!-- ---------- Skills ---------- -->
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul class="skill-list">
                 <li>Non-chalant Valorant gaming</li>
                 <li>Internal road rage</li>
                 <li>Spending money on pickleball</li>
@@ -54,78 +63,85 @@
             </ul>
         </section>
 
-        <hr>
+        <!-- ---------- Education ---------- -->
+        <section id="education" class="card">
+            <h2>Education</h2>
 
-        <section id="education">
-            <header>
-                <h2>Education</h2>
-            </header>
-            <ol>
-                <li>Bethel Christian Academy (Nursery - Grade 2)</li>
-                <li>PBC Sunbeam School, Inc. (Grade 3 - Grade 6)</li>
-                <li>Marcelo H. Del Pilar National High School (Grade 7 - Grade 10)</li>
-                <li>STI College Balagtas (Grade 11)</li>
-                <li>Richwell Colleges, Inc. (Grade 12)</li>
-                <li>FEU Institute of Technology (2022-2024)</li>
-                <li>Centro Escolar University - Malolos (2nd Sem of S.Y. 2024-2025 - Present)</li>
-            </ol>
+            <div class="entry">
+                <span class="entry-year">2025 - Present</span>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="entry-school">Central Escolar University, Malolos</p>
+            </div>
+
+            <div class="entry">
+                <span class="entry-year">2022 - 2024</span>
+                <h3>Bachelor of Science in Information Technology with specialization in Animation and Game Development</h3>
+                <p class="entry-school">FEU Institute of Technology</p>
+            </div>
+
+            <div class="entry">
+                <span class="entry-year">2020 - 2021</span>
+                <h3>Grade 12 Senior High School - Information Communication Technology</h3>
+                <p class="entry-school">Richwell Colleges, Inc.</p>
+            </div>
+
+            <div class="entry">
+                <span class="entry-year">2019 - 2020</span>
+                <h3>Grade 11 Senior High School - Information Technology in Mobile App and Web Development</h3>
+                <p class="entry-school">STI College Balagtas</p>
+            </div>
         </section>
 
-        <hr>
-
-        <section id="awards">
-            <header>
-                <h2>Awards and Achievements</h2>
-            </header>
-            <ol>
-                <li>Valorant - Ascendant 1 Peak</li>
-                <li>Valorant - PHP100,000 total spent</li>
-                <li>TikTok - 1.8m Views on a video</li>
-                <li>GitHub Project Collaborator 2026</li>
-            </ol>
+        <!-- ---------- Achievements ---------- -->
+        <section id="achievements" class="card">
+            <h2>Achievements</h2>
+            <ul class="achievement-list">
+                <li>
+                    <strong>Valorant</strong> - Ascendant 1 peak
+                </li>
+                <li>
+                    <strong>Valorant</strong> - PHP100,000+ total spent
+                </li>
+                <li>
+                    <strong>TikTok</strong> - i>TikTok - 1.8m Views
+                </li>
+                <li>
+                    <strong>       <li>GitHub Project Collaborator</strong> - 2026
+                </li>
+            </ul>
         </section>
 
-        <hr>
+        <!-- ---------- Contact me ---------- -->
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row clearfix">
+                    <div class="field field-left">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
 
-        <section id="contact">
-            <header>
-                <h2>Contact Me</h2>
-            </header>
-            
-            <form action="#" method="post">
-                <div>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" maxlength="25" required placeholder="Name M. Toh">
+                    <div class="field field-right">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
                 </div>
-                <br>
-                <div>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" maxlength="25" required placeholder="email@motoh.com">
-                </div>
-                <br>
-                <div>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" cols="30" maxlength="255" required placeholder="Message mo toh"></textarea>
-                </div>
-                <br>
-                <button type="submit">Submit mo toh</button>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
             </form>
         </section>
 
-        <br><br><br>
-        <hr>
-
-        <footer>
-        <nav>
-                <a href="#profile">Profile</a> | 
-                <a href="#skills">Skills</a> | 
-                <a href="#education">Education</a> | 
-                <a href="#awards">Awards and Achievements</a> | 
-                <a href="#contact">Contact Me</a>
-                </nav>
-            </footer>
-
     </main>
 
+    <!-- ---------- Footer ---------- -->
+    <footer class="site-footer">
+        <p class="footer-name">Juan Dela Cruz &middot; Portfolio</p>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
+
 </body>
+
 </html>
